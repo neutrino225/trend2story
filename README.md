@@ -112,13 +112,6 @@ conda activate nlp_project
 ollama pull llama3.2:3b
 ```
 
-4. (Optional) Set up API keys:
-```bash
-# Create .env file
-cp .env.example .env
-# Edit .env with your API keys
-```
-
 ## Usage
 
 ### Web Interface
