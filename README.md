@@ -39,23 +39,60 @@ A web application that transforms trending topics into engaging stories using AI
 - **Ollama**: Local LLM deployment and management
 
 ### Data Processing
-- **BeautifulSoup4**: Web scraping
-- **Pandas**: Data manipulation
-- **Pytrends**: Google Trends API integration
+- **Selenium**: Web scraping
 - **GNews**: Google News API integration
 
 ### Infrastructure
 - **Docker**: Containerization
 - **Conda**: Environment management
 
-## Prerequisites
+## Architecture
 
+### System Components
+1. **Web Interface (Gradio)**
+   - User interaction layer
+   - Trend source selection
+   - Theme selection
+   - Story display
+
+2. **API Layer**
+   - FastAPI REST endpoints
+   - gRPC services
+   - Request/response handling
+
+3. **Data Collection**
+   - Trend scraping from multiple sources
+   - Data preprocessing and cleaning
+   - Trend data storage
+
+4. **Story Generation**
+   - LLM integration via Ollama
+   - Theme-based story creation
+   - Content moderation
+
+5. **Infrastructure**
+   - Docker containers
+   - Environment management
+   - Service orchestration
+
+### Data Flow
+1. User selects trend source and theme
+2. System fetches trending topics
+3. Data is processed and formatted
+4. LLM generates story based on trends and theme
+5. Story is returned to user interface
+
+## Setup
+
+### Prerequisites
 - Python 3.9+
 - Conda (recommended for environment management)
 - Docker (optional, for containerized deployment)
 - Ollama with llama3.2:3b model installed
+- Minimum 8GB RAM (16GB recommended)
+- 4GB free disk space
 
-## Installation
+### Installation Steps
 
 1. Clone the repository:
 ```bash
@@ -73,6 +110,13 @@ conda activate nlp_project
 ```bash
 # Install Ollama (follow instructions from https://ollama.com/)
 ollama pull llama3.2:3b
+```
+
+4. (Optional) Set up API keys:
+```bash
+# Create .env file
+cp .env.example .env
+# Edit .env with your API keys
 ```
 
 ## Usage
@@ -101,6 +145,58 @@ uvicorn app.api:app --host 0.0.0.0 --port 8000
 # Start the gRPC server
 python -m app.grpc_server
 ```
+
+### API Documentation
+- REST API: `http://localhost:8000/docs`
+- gRPC: See proto files in `app/proto/`
+
+## Model Sources
+
+### LLM Model
+- **Model**: llama3.2:3b
+- **Source**: Ollama
+- **Size**: 3B parameters
+- **Features**:
+  - Local deployment
+  - Fast inference
+  - Good story generation capabilities
+  - Theme understanding
+
+### Trend Sources
+1. **Google News**
+   - Real-time news trends
+   - Global coverage
+   - Multiple categories
+
+2. **YouTube**
+   - Video trends
+   - Popular content
+   - Regional trends
+
+3. **Google Trends**
+   - Search trends
+   - Interest over time
+   - Related queries
+
+## Limitations
+
+### Technical Limitations
+- Limited to 3B parameter model (may affect story quality)
+- Local deployment requires sufficient hardware
+- Rate limits on trend data sources
+- Memory constraints for long stories
+
+### Content Limitations
+- May generate inappropriate content (requires moderation)
+- Limited context window for long trends
+- Potential bias in trend sources
+- Language limitations (primarily English)
+
+### Performance Considerations
+- Story generation time varies (5-30 seconds)
+- Trend fetching depends on source API availability
+- High memory usage during story generation
+- Network latency for trend data
 
 ## Project Structure
 
