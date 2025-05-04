@@ -39,9 +39,7 @@ A web application that transforms trending topics into engaging stories using AI
 - **Ollama**: Local LLM deployment and management
 
 ### Data Processing
-- **BeautifulSoup4**: Web scraping
-- **Pandas**: Data manipulation
-- **Pytrends**: Google Trends API integration
+- **Selenium**: Web scraping
 - **GNews**: Google News API integration
 
 ### Infrastructure
@@ -128,7 +126,7 @@ The project includes Docker support for easy deployment:
 To build and run with Docker:
 ```bash
 docker build -t trend2story .
-docker run -p 8001:8001 trend2story
+docker run -p 50051:50051 trend2story
 ```
 
 ## Contributing
