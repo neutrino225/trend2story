@@ -1,0 +1,384 @@
+{
+	"id": "8ed1b70b-cda0-49bd-b969-f0d8ac12da95",
+	"name": "TrendStory Minimal Test Cases",
+	"timestamp": "2025-05-04T11:32:30.616Z",
+	"collection_id": "44645304-3604202e-572b-415e-a66e-2a7dc1d263eb",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 27,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-05-04T11:31:19.358Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "41da6356-9e32-4a77-8327-ed1504836d6f",
+			"name": "GET Root",
+			"url": "http://localhost:8000/",
+			"time": 310,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				310
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "6fe4ac6f-b224-4802-9841-016c3f0d74b9",
+			"name": "POST Generate Story - News Comedy",
+			"url": "http://localhost:8000/generate-story",
+			"time": 31990,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type header is JSON": true,
+				"Response is a valid JSON object": true,
+				"Response has a 'story' property that is a string": true,
+				"The 'story' property contains some text": true,
+				"Response has an 'error' property that is null": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is a valid JSON object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has a 'story' property that is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The 'story' property contains some text": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has an 'error' property that is null": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				31990
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type header is JSON": true,
+					"Response is a valid JSON object": true,
+					"Response has a 'story' property that is a string": true,
+					"The 'story' property contains some text": true,
+					"Response has an 'error' property that is null": true
+				}
+			]
+		},
+		{
+			"id": "ac4cd080-c0e6-4f3c-bab6-158c48643779",
+			"name": "POST Generate Story - YouTube Drama",
+			"url": "http://localhost:8000/generate-story",
+			"time": 22281,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type header is JSON": true,
+				"Response is a valid JSON object": true,
+				"Response has a 'story' property that is a string": true,
+				"The 'story' property contains some text": true,
+				"Response has an 'error' property that is null": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is a valid JSON object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has a 'story' property that is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The 'story' property contains some text": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has an 'error' property that is null": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				22281
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type header is JSON": true,
+					"Response is a valid JSON object": true,
+					"Response has a 'story' property that is a string": true,
+					"The 'story' property contains some text": true,
+					"Response has an 'error' property that is null": true
+				}
+			]
+		},
+		{
+			"id": "cf529a5e-5163-4e76-aada-db733f4c85d1",
+			"name": "POST Generate Story - Trends Horror",
+			"url": "http://localhost:8000/generate-story",
+			"time": 15774,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type header is JSON": true,
+				"Response is a valid JSON object": true,
+				"Response has a 'story' property that is a string": true,
+				"The 'story' property contains some text": true,
+				"Response has an 'error' property that is null": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is a valid JSON object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has a 'story' property that is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The 'story' property contains some text": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has an 'error' property that is null": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				15774
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type header is JSON": true,
+					"Response is a valid JSON object": true,
+					"Response has a 'story' property that is a string": true,
+					"The 'story' property contains some text": true,
+					"Response has an 'error' property that is null": true
+				}
+			]
+		},
+		{
+			"id": "3331d09e-6e06-45a7-b012-858009abd983",
+			"name": "POST Generate Story - Invalid Source",
+			"url": "http://localhost:8000/generate-story",
+			"time": 3,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response contains invalid source error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains invalid source error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response contains invalid source error message": true
+				}
+			]
+		},
+		{
+			"id": "04648ff4-5163-4a7b-9918-85ed3cc3965a",
+			"name": "POST Generate Story - Invalid Theme",
+			"url": "http://localhost:8000/generate-story",
+			"time": 3,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response contains invalid theme error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains invalid theme error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response contains invalid theme error message": true
+				}
+			]
+		},
+		{
+			"id": "2423ca9e-0789-42b2-9d26-352556a5ead2",
+			"name": "POST Generate Story - Source Missing",
+			"url": "http://localhost:8000/generate-story",
+			"time": 3,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response contains source error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains source error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response contains source error message": true
+				}
+			]
+		},
+		{
+			"id": "b59aec59-974f-4509-a6fb-ea35f8074c02",
+			"name": "POST Generate Story - Theme Missing",
+			"url": "http://localhost:8000/generate-story",
+			"time": 3,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response contains theme error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains theme error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response contains theme error message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 70367,
+	"collection": {
+		"requests": [
+			{
+				"id": "41da6356-9e32-4a77-8327-ed1504836d6f",
+				"method": "GET"
+			},
+			{
+				"id": "6fe4ac6f-b224-4802-9841-016c3f0d74b9",
+				"method": "POST"
+			},
+			{
+				"id": "ac4cd080-c0e6-4f3c-bab6-158c48643779",
+				"method": "POST"
+			},
+			{
+				"id": "cf529a5e-5163-4e76-aada-db733f4c85d1",
+				"method": "POST"
+			},
+			{
+				"id": "3331d09e-6e06-45a7-b012-858009abd983",
+				"method": "POST"
+			},
+			{
+				"id": "04648ff4-5163-4a7b-9918-85ed3cc3965a",
+				"method": "POST"
+			},
+			{
+				"id": "2423ca9e-0789-42b2-9d26-352556a5ead2",
+				"method": "POST"
+			},
+			{
+				"id": "b59aec59-974f-4509-a6fb-ea35f8074c02",
+				"method": "POST"
+			}
+		]
+	}
+}
